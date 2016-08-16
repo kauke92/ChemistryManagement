@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".template_pages"
+    android:background="#ff7f22">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="UserName"
+            android:id="@+id/text_username"
+            android:layout_gravity="left|center_vertical"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/button_profile"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout13">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LiveStock"
+            android:id="@+id/livestock_info_bottom_livestock"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/livestock_info_bottom_home"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:id="@+id/livestock_info_bottom_medicine"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drug_for_admin"
+        android:id="@+id/drug_for_admin"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_alignTop="@+id/Drugs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Drugs"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/amount"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/drug_for_admin"
+        android:layout_marginBottom="50dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drug_amount"
+        android:id="@+id/drug_amount"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_alignTop="@+id/amount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/days"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/drug_amount"
+        android:layout_marginBottom="50dp"
+        android:layout_alignLeft="@+id/Drugs"
+        android:layout_alignStart="@+id/Drugs" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drug_period"
+        android:id="@+id/drug_period"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_alignTop="@+id/days"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days"
+        android:layout_marginBottom="120dp"
+        android:spinnerMode="dialog"
+        android:layout_above="@+id/frameLayout13"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/drug_period"
+        android:layout_alignLeft="@+id/Drugs"
+        android:layout_alignStart="@+id/Drugs"
+        android:layout_toEndOf="@+id/Drugs"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CowID:"
+        android:id="@+id/myCowID"
+        android:layout_alignTop="@+id/cowIDVal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/cowIDVal"
+        android:layout_below="@+id/frameLayout12"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:id="@+id/date"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_above="@+id/drug_for_admin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/date_information"
+        android:layout_alignTop="@+id/date"
+        android:layout_alignRight="@+id/Drugs"
+        android:layout_alignEnd="@+id/Drugs"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Administer"
+        android:id="@+id/administer"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/frameLayout13"
+        android:layout_toLeftOf="@+id/cowIDVal"
+        android:layout_toStartOf="@+id/cowIDVal" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/button_history_livestock"
+        android:layout_alignTop="@+id/administer"
+        android:layout_alignRight="@+id/days"
+        android:layout_alignEnd="@+id/days"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>

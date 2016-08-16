@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jason.mooo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homeScreen"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".Reset_Password"
+            android:label="@string/title_activity_reset__password" >
+        </activity>
+        <activity
+            android:name=".main_report_ui"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".template_pages"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".livestock_main"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".history_livestock"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".view_purchases"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".User_info"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".add_new_livestock"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".change_email"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".change_password"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".add_new_chemical"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".chemical_main"
+            android:label="@string/title_activity_template_pages" >
+        </activity>
+        <activity
+            android:name=".BarcodeScan"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".main_puchase"
+            android:label="@string/title_activity_main_puchase" >
+        </activity>
+        <activity
+            android:name=".purchaseDrugActivity"
+            android:label="@string/title_activity_purchase_drug" >
+        </activity>
+        <activity
+            android:name=".Cow_History_Activity"
+            android:label="@string/title_activity_cow__history_" >
+        </activity>
+        <activity android:name=".reportTestActivity" >
+        </activity>
+    </application>
+
+</manifest>

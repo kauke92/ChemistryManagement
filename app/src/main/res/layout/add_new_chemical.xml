@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jason.mooo.template_pages"
+    android:background="#ff7f22">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="UserName"
+            android:id="@+id/text_username"
+            android:layout_gravity="left|center_vertical"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/button_profile"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout7">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LiveStock"
+            android:id="@+id/button_addnewchem_bottom_livestock"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/button_addnewchem_bottom_home"
+            android:layout_gravity="center"
+            android:maxLines="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:id="@+id/button_addnewchem_bottom_chemical"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/frameLayout7"
+        android:id="@+id/num3">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:text="Add New Medicine"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal|top"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:id="@+id/myDrug"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="110dp"
+            android:textStyle="bold"
+            android:layout_marginRight="90dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/milkText"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="140dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number" />
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:text="Scan For ID"-->
+            <!--android:id="@+id/button_scan_for_id"-->
+            <!--android:layout_gravity="center_horizontal|bottom"-->
+            <!--android:layout_marginTop="20dp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Witholding milk"
+            android:id="@+id/milk"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="155dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginRight="40dp" />
+
+        <EditText
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/slaughterText"
+            android:layout_gravity="left|center_vertical"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Witholding slaughter"
+            android:id="@+id/slaughter"
+
+            android:layout_gravity="right|center_vertical"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="Add Medicine"
+            android:id="@+id/addDrug"
+
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/drugName"
+            android:layout_gravity="left|top"
+            android:paddingTop="40dp"
+            android:longClickable="false"
+            android:maxLines="1"
+            android:layout_marginTop="70dp"
+            android:singleLine="true" />
+
+
+    </FrameLayout>
+</RelativeLayout>

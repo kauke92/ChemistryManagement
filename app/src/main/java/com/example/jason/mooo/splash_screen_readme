@@ -1,0 +1,11 @@
+steps to use the loading screen
+
+        context = javaclass.this if in a main ui class, else a context will need to me used.
+        to pass in a context u can pass this into a constructor.
+
+        ls = new loading_splash(new AlertDialog.Builder(context), LayoutInflater.from(context));
+        ls.start_splash();
+
+once finished call:
+
+        ls.cancel();
